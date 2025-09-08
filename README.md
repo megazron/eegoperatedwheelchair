@@ -65,3 +65,32 @@ cd EEG-Wheelchair
 
 # Install Python dependencies
 pip install numpy scikit-learn matplotlib
+
+Requirements:
+
+Python 3.x
+
+Libraries: tkinter, matplotlib, pandas (install if needed).
+
+2. CO Monitoring
+
+Open co_monitoring.js in a browser-based environment or integrate into an IoT/web app.
+
+3. Google Earth Engine
+
+Open the link in google earth engine link.txt in your browser.
+
+Requires a Google Earth Engine account for access.
+
+📊 Applications
+
+Smart agriculture and greenhouse management.
+
+Air quality monitoring (CO/CO₂ levels).
+
+Remote sensing integration with Google Earth Engine.
+
+👨‍💻 Author
+
+Developed by MegaZroN (Gaus Mohiuddin Sayyad)
+🌐 Portfolio: https://megazron.com
