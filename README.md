@@ -66,9 +66,9 @@ cd EEG-Wheelchair
 # Install Python dependencies
 pip install numpy scikit-learn matplotlib
 
-Requirements:
+### **Requirements**:
 
-Python 3.x
+1. Python 3.x
 
 Libraries: tkinter, matplotlib, pandas (install if needed).
 
@@ -82,7 +82,7 @@ Open the link in google earth engine link.txt in your browser.
 
 Requires a Google Earth Engine account for access.
 
-📊 Applications
+### **📊 Applications**
 
 Smart agriculture and greenhouse management.
 
@@ -90,7 +90,7 @@ Air quality monitoring (CO/CO₂ levels).
 
 Remote sensing integration with Google Earth Engine.
 
-👨‍💻 Author
+### **👨‍💻 Author**
 
 Developed by MegaZroN (Gaus Mohiuddin Sayyad)
 🌐 Portfolio: https://megazron.com
