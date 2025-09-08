@@ -57,11 +57,6 @@ It combines **EEG signal acquisition, machine learning prediction, microcontroll
 - Arduino IDE.  
 - Jupyter Notebook.  
 
-### Installation
-```bash
-# Clone the repo
-git clone https://github.com/<your-username>/EEG-Wheelchair.git
-cd EEG-Wheelchair
 
 # Install Python dependencies
 pip install numpy scikit-learn matplotlib
