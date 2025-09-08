@@ -1,8 +1,16 @@
-#define SAMPLE_RATE 512
-#define BAUD_RATE 115200
-#define INPUT_PIN A0
-#define MOTOR_PIN1 10  // Motor 1 control
-#define MOTOR_PIN2 11  // Motor 2 control
+/*
+ * Sensor-Based Motor Control Arduino Template
+ * Created by MegaZroN, portfolio https://megazron.com
+ * This template is designed for controlling motors based on analog sensor input.
+ * The sampling rate and motor control thresholds can be adjusted as needed.
+ * Reference: Based on concepts inspired by Backyard Brains (https://backyardbrains.com/).
+ */
+
+#define SAMPLE_RATE 512 // Sampling rate in Hz
+#define BAUD_RATE 115200 // Serial communication baud rate
+#define INPUT_PIN A0 // Analog input pin for sensor
+#define MOTOR_PIN1 10 // Motor 1 control pin
+#define MOTOR_PIN2 11 // Motor 2 control pin
 
 void setup() {
   // Initialize serial communication
@@ -20,17 +28,17 @@ void loop() {
   unsigned long interval = present - past;
   past = present;
 
-  // Run timer
+  // Run timer for sampling
   static long timer = 0;
   timer -= interval;
 
-  // Sample
+  // Sample at the defined rate
   if (timer < 0) {
-    timer += 1000000 / SAMPLE_RATE;
+    timer += 1000000 / SAMPLE_RATE; // Adjust timer for next sample
     int sensor_value = analogRead(INPUT_PIN);
     Serial.println(sensor_value);
 
-    // Motor control conditions
+    // Motor control based on sensor value (modify thresholds and actions as needed)
     if (sensor_value >= 400 && sensor_value < 500) {
       // Move left
       digitalWrite(MOTOR_PIN1, HIGH);
@@ -56,6 +64,7 @@ void loop() {
       Serial.println("Stopping");
     } 
     else {
+      // Default action (modify as needed)
       digitalWrite(MOTOR_PIN1, HIGH);
       digitalWrite(MOTOR_PIN2, HIGH);
     }
